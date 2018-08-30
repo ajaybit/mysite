@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>HeadHack.in-TryitYourself</title>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+        <style type="text/css">
+            textarea, iframe {
+                
+                height: 500px;
+                width: 100%;      
+            }
+        </style>
+    </head>
+    <body>
+    <div class="w3-panel w3-card-4"><a href="../../index.html" style="text-decoration: none;"><h1 class="w3-jumbo w3-allerta"><span style="color: gray">HeadHack</span><span style="color: green">.in</span><span style="float: right;font-size: 20px">LEARN SOMETHING YOU LOVE</span></h1></a></div>
+        <table width="100%" border="0" cellspacing="5" cellpadding="5">
+            <tr>
+                
+                <td width="100%"  scope="col">
+                <div class="w3-panel w3-green w3-block">
+                    <a href="../../index.html" class="w3-btn" target="_blank">HOME</a>
+                    <input onclick="runCode();" type="button" value="Run Code" class="w3-btn w3-black">
+                    <a href="../../interview/html_interview.html" class="w3-btn w3-right">HTML INTERVIEW QUESTIONS!</a>
+                </div>
+                </td>
+                
+            </tr>
+        </table>
+        <table style="width: 90%;margin-left: 20px;">
+            <tr style="width: 50%">
+                <td style="width: 50%"> 
+                    <form>                        
+                        <textarea name="sourceCode" id="sourceCode" class="w3-panel w3-card-2 w3-light-grey">
+ 
+<!DOCTYPE>
+<html>  
+    <body>  
+        <article>
+        <h2>Narendra Modi</h2> 
+        <i>Prime Minister of India</i>
+        <p>Narendra DamodarDas Modi is the 15th and current Prime Minister of India, Modi, a leader of the Bharatiya Janata Party (BJP), previously served as the Chief Minister of Gujarat state from 2001 to 2014. He is currently the Member of Parliament (MP) from Varanasi. </p> </article>
+    </body>
+</html> 
+</textarea>
+                    </form>
+                </td>
+                <td><iframe name="targetCode" id="targetCode" class="w3-panel w3-card-2 w3-light-grey"></iframe></td>
+            </tr>
+        </table>  
+        <script type="text/javascript">
+            function runCode()
+            {
+                var content = document.getElementById('sourceCode').value;
+                var iframe = document.getElementById('targetCode');
+                iframe = (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument.document) ? iframe.contentDocument.document : iframe.contentDocument;
+                iframe.document.open();
+                iframe.document.write(content);
+                iframe.document.close();
+                return false;
+            }
+            runCode();
+        </script>
+        </div>
+<script src="js/codecolor.js"></script>
+<script>
+w3CodeColor();
+</script>
+    </body>
+</html>
